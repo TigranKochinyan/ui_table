@@ -1,0 +1,45 @@
+.table-parent-div {
+    overflow-x: auto;
+}
+table, th, td {
+    // border: 1px solid black;
+    // border-collapse: collapse;
+    // padding: 12px 5px 10px;
+    border: none;
+    padding: 30px;
+    font-size: 14px;
+    
+}
+table th {
+    color: #fff;
+}
+
+.usersTable {
+    max-width: 1000px!important;
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 12px -12px rgb(0, 0, 0 / 29%);
+    -moz-box-shadow: 0 5px 12px -12px rgba(0,0,0,.29);
+    box-shadow: 0 5px 12px -12px rgb(0, 0, 0 / 29%);
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    color: #212529;
+    thead {
+        background-color: #6807f7;
+    }
+    &_deleteButton {
+        padding: 20px 15px;
+        color: #fff;
+        background-color: #e44843;
+        border: none;
+        margin: 15px 40%;
+        border-radius: 7px;
+        font-size: 16px;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+}

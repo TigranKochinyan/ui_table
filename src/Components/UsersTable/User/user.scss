@@ -1,0 +1,39 @@
+.user {
+
+    &-row {
+        
+        &:nth-child(even) {
+            background-color: #e4ebda;
+        }
+        &__checked {
+            background-color: #d8d7d7 !important;
+        }
+        input {
+            border: none;
+            width: 100px;
+            text-align: center;
+            border-bottom: 1px solid;
+            font-size: 16px;
+            background-color: bottom;
+        }
+        &_draged {
+            background-color: darkgrey;
+        }
+        &_droped {
+            background-color: aqua;
+        }
+        &_ondrag {
+            background-color: darkgrey !important;
+        }
+        &_button {
+            padding: 5px 10px;
+            background-color: #e44444;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+        }
+    }
+    &-checkbox {
+        width: 20px;
+    }
+}
