@@ -34,7 +34,7 @@ table th {
         color: #fff;
         background-color: #e44843;
         border: none;
-        margin: 15px 40%;
+        margin: 15px;
         border-radius: 7px;
         font-size: 16px;
         &:hover {
@@ -42,4 +42,10 @@ table th {
             opacity: 0.5;
         }
     }
+}
+
+.table-next-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');//для минификации css файлов. удаление пробелов комментов и так далее
 const TerserWebpackPlugin = require('terser-webpack-plugin');//для минификации js файлов. удаление пробелов комментов и так далее 
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -61,9 +61,9 @@ const plugins = () => {
             filename: filename('css') 
         })
     ];
-    if(isProd) {
-        base.push(new BundleAnalyzerPlugin())
-    }
+    // if(isProd) {
+    //     base.push(new BundleAnalyzerPlugin())
+    // }
     return base;
 }
 const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;

@@ -74,7 +74,9 @@ const UsersTable = ({users, getUsers, deleteChecked, page, updateFromStorage}) =
                     </tbody>
                 </table>
             </div>
-            <button className="usersTable_deleteButton" onClick={removeChecked}>Delete checked</button>
+            <div className="table-next-div">
+                <button className="usersTable_deleteButton" onClick={removeChecked}>Delete checked</button>
+            </div>
             { users.length > 6 &&  <Pagination pageCount={pageCount()}/>}
             <AddUser/>
         </>
